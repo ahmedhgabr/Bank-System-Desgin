@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <!-- site metas -->
+    <title>Bank Account Details</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+    <!-- Tweaks for older IEs-->
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+    <!-- owl stylesheets -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen"
+    />
+  </head>
+  <body>
+    <!--header section start -->
+
+    <div class="header_section header_bg">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!--back button-->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          style="cursor: pointer"
+          onclick="history.back()"
+          width="40"
+          height="40"
+          fill="black"
+          class="bi bi-arrow-left-circle-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"
+          />
+        </svg>
+
+        <div class="logo">
+          <a href="client_services.html" ><img src="images/logo.png" style="max-width:40%;" /></a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="client_services.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">announcements</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="notifications.html">Notifications</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Report</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!--header section end -->
+
+    <!-- Accounts section start -->
+    <div class="contact_section layout_padding">
+      <div class="container-fluid">
+        <h1 class="what_taital">Bank Account</h1>
+        <p class="amet_text">
+          manage your bank account, show transactions, and transfer money
+        </p>
+
+        <div class="contact_section2">
+          <div class="row" id="Account_Row">
+            <div class="col-md-5 padding_left_0" >
+              <!-- Account Card-->
+              <div class="card" >
+                <h3 class="card-header">Client Name</h3>
+                <div class="card-body">
+                  <h5 class="card-title" style="pointer-events: none">
+                    <b>Account details</b>
+                  </h5>
+                  <p
+                    class="card-text"
+                    id="Digits"
+                    style="margin: 0px 0px 0px 20px"
+                    onclick="showDigits()"
+                  >
+                    Account Number : 123923****
+                  </p>
+                  <a
+                    href="#"
+                    id="DigitsA"
+                    style="margin: 0px 0px 0px 20px"
+                    onclick="showDigits()"
+                    >Show Digits</a
+                  >
+                  <p class="card-text" style="margin: 10px 0px 0px 20px">
+                    <b>Balance : </b>10,100.90 EGP
+                  </p>
+                  <p class="card-text" style="margin-top: 0px">
+                    Type : Savings Account<br />Status : Active <br />Country :
+                    Egypt <br />
+                  </p>
+                  <a
+                    href="TransferMoney.html"
+                    class="send_bt"
+                    style="pointer-events: all"
+                    >Transfer money
+                  </a>
+                </div>
+                <!-- Danger Card-->
+                <div
+                  class="card"
+                  id="closeAccountCard"
+                  style="width: 18rem; align-self: center; display: none"
+                >
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: red">
+                      <b>Close Account</b>
+                    </h5>
+                    <p class="card-text">
+                      Are you sure you want to Close this bank account ?
+                    </p>
+
+                    <a
+                      href="#"
+                      class="card-link"
+                      style="color: red"
+                      onclick="closeAccount()"
+                      >Yes, I am sure</a
+                    >
+                    <a href="#" class="card-link" onclick="closeAccountBack()"
+                      >No,back to safe
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Account Card-->
+
+              <!-- Close Account-->
+              <a
+                href="#"
+                class="send_bt"
+                id="closeAccountA"
+                onclick="showCloseAccount()"
+                >Close this Account</a
+              >
+            </div>
+            <!--End Left div-->
+
+            <div class="col-md-6 padding_0" id="Transictions">
+              <!-- Transictions Table -->
+              <h4 style="margin: 10px"><b>Transactions</b></h4>
+              <table class="table" style="width: 80%; margin: 10px">
+                <thead>
+                  <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">amount</th>
+                    <th scope="col">type</th>
+                    <th scope="col">date</th>
+                    <th scope="col">beneficairy</th>
+                    <th scope="col">status</th>
+                    <th scope="col">description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>1000.0 EGP</td>
+                    <td>deposit</td>
+                    <td>01/01/2019</td>
+                    <td>029101210</td>
+                    <td style="color: green;">complete</td>
+                    <td>internal</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>500.0 EGP</td>
+                    <td>withdrawal</td>
+                    <td>01/01/2020</td>
+                    <td>amazon.eg</td>
+                    <td style="color: green;">complete</td>
+                    <td>domestic</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>37,000.0 EGP</td>
+                    <td>withdrawal</td>
+                    <td>01/01/2021</td>
+                    <td>GUC</d>
+                    <td style="color: green;">complete</td>
+                    <td>domestic</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>200.0 USD</td>
+                    <td>withdrawal</td>
+                    <td>01/01/2022</td>
+                    <td>300323</td>
+                    <td style="color: palevioletred;">pending</td>
+                    <td>international</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!-- End Transictions Table -->
+            </div>
+
+            <!-- js -->
+            <script>
+              function showDigits() {
+                if (
+                  document.getElementById("Digits").innerText ==
+                  "Account Number : 1239231627"
+                ) {
+                  document.getElementById("Digits").innerHTML =
+                    "Account Number : 123923****";
+                  document.getElementById("DigitsA").innerHTML = "Show Digits";
+                } else {
+                  document.getElementById("Digits").innerText =
+                    "Account Number : 1239231627";
+                  document.getElementById("DigitsA").innerHTML = "Hide Digits";
+                }
+                event.preventDefault();
+              }
+
+              function showCloseAccount() {
+                document.getElementById("closeAccountCard").style.display =
+                  "block";
+                document.getElementById("closeAccountA").style.display = "none";
+                event.preventDefault();
+              }
+              function closeAccount() {
+                document.getElementById("Account_Row").style.display = "none";
+                document.getElementById("NoAccounts").style.display = "block";
+                event.preventDefault();
+              }
+              function closeAccountBack() {
+                document.getElementById("closeAccountCard").style.display =
+                  "none";
+                document.getElementById("closeAccountA").style.display =
+                  "block";
+                event.preventDefault();
+              }
+            </script>
+            <!-- end js -->
+          </div>
+          <div>
+            <!--No Accounts-->
+            <p class="amet_text" id="NoAccounts" style="display: none">
+              <b
+                >You Don't have a Bank Account <br /><u
+                  ><a href="openBankAccount.html">
+                    You can open a Bank Account from here</a
+                  ></u
+                ></b
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--footer section start -->
+    <div class="footer_section layout_padding margin_top_90">
+      <div class="container">
+        <!-- copyright section start -->
+        <div class="copyright_section">
+          <div class="copyright_text">
+            Copyright 2019 All Right Reserved By
+            <a href="https://html.design">Free html Templates</a>
+          </div>
+        </div>
+        <!-- copyright section end -->
+      </div>
+    </div>
+    <!--footer section end -->
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- javascript -->
+    <script src="js/owl.carousel.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+  </body>
+</html>

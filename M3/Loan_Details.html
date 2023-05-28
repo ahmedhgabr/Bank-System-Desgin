@@ -37,27 +37,43 @@
   <!--header section start -->
   <div class="header_section header_bg">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <!--back button-->
+      <svg xmlns="http://www.w3.org/2000/svg" style="cursor: pointer" onclick="history.back()"  width="40" height="40"  fill="black" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+      </svg>
+
+
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" style="max-width:40%;" /></a>
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="client_services.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="announcements.html">announcements</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
+              <a class="nav-link" href="notifications.html">Notifications</a>
+            </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="report.html">Report</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="team.html">Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
+            <a class="nav-link" href="index.html">Logout</a>
           </li>
         </ul>
       </div>
@@ -190,48 +206,7 @@
   <!--footer section start -->
   <div class="footer_section layout_padding margin_top_90">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-sm-6">
-          <h4 class="about_text">About Financial</h4>
-          <div class="location_text"><img src="images/map-icon.png"><span class="padding_left_15">Locations</span></div>
-          <div class="location_text"><img src="images/call-icon.png"><span class="padding_left_15">+01 9876543210</span>
-          </div>
-          <div class="location_text"><img src="images/mail-icon.png"><span class="padding_left_15">demo@gmail.com</span>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <h4 class="about_text">About Financial</h4>
-          <p class="dolor_text">ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <h4 class="about_text">Instagram</h4>
-          <div class="footer_images">
-            <div class="footer_images_left">
-              <div class="image_12"><img src="images/img-12.png"></div>
-              <div class="image_12"><img src="images/img-12.png"></div>
-              <div class="image_12"><img src="images/img-12.png"></div>
-            </div>
-            <div class="footer_images_right">
-              <div class="image_12"><img src="images/img-12.png"></div>
-              <div class="image_12"><img src="images/img-12.png"></div>
-              <div class="image_12"><img src="images/img-12.png"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <h4 class="about_text">Newsletter</h4>
-          <input type="text" class="mail_text" placeholder="Enter your email" name="Enter your email">
-          <div class="subscribe_bt"><a href="#">Subscribe</a></div>
-          <div class="footer_social_icon">
-            <ul>
-              <li><a href="#"><img src="images/fb-icon1.png"></a></li>
-              <li><a href="#"><img src="images/twitter-icon1.png"></a></li>
-              <li><a href="#"><img src="images/linkedin-icon1.png"></a></li>
-              <li><a href="#"><img src="images/youtub-icon1.png"></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      
       <!-- copyright section start -->
       <div class="copyright_section">
         <div class="copyright_text">Copyright 2019 All Right Reserved By <a href="https://html.design">Free html

@@ -90,7 +90,30 @@
           <div class="col-md-6 padding_left_0">
             <div class="mail_section">
               <div style="margin:10px;">
-                <h1>Choose Loan Type</h1>
+                <h1>Personal Information :</h1>
+               
+                <label class="container">
+               
+                <input type="" class="mail_text_1 " id="a" placeholder="Name" name="Name">
+                <input type="" class="mail_text_1 " id=b placeholder="Birth Date" name="Birth Date">
+                <input type="" class="mail_text_1 " id=c placeholder="Email" name="Name" >
+                <input type="" class="mail_text_1 " id=d placeholder="Phone Number" name="Name">
+                <input type="" class="mail_text_1 " id=e placeholder="Address" name="Name">
+                <input type="" class="mail_text_1 " id=f placeholder="National ID" name="Name">
+                <input type="" class="mail_text_1 " id=g placeholder="Salary" name="Name">
+                <input type="" class="mail_text_1 " id=h placeholder="Place of Work" name="Name">
+                
+               
+              </label>
+                
+                <h1>Requested Loan Amount</h1>
+                <label class="container">
+                <input type="" class="mail_text_1 " id=i placeholder="Amount" name="Name">
+
+                </label>
+
+
+              <h1>Loan Type</h1>
                 <label class="container" style="font-size: large;">Personal
                   <input type="radio" checked="checked" name="radio">
                   <span class="checkmark"></span>
@@ -100,37 +123,9 @@
                   <span class="checkmark"></span>
                 </label>
 
-
-                <input type="" class="mail_text_1 " id=x placeholder="Amount" name="Name" style="margin-bottom: 20px;">
-
-                <script>
                 
-
-                  function myfunction1() {
-                    if (document.getElementById("x").value == "")
-                      alert("please complete everything");
-                    else if (document.getElementById("y").value == "")
-                      alert("please complete everything");
-                    else if (document.getElementById("z").value == "")
-                      alert("please complete everything");
-
-                    else
-                      window.location.replace("Applied Loans.html");
-                  }
-                  function myfunction2() {
-                    if (document.getElementById("x").value == "")
-                      alert("please complete everything");
-                    else if (document.getElementById("y").value == "")
-                      alert("please complete everything");
-                    else if (document.getElementById("z").value == "")
-                      alert("please complete everything");
-
-                    else
-                      window.location.replace("Loan_Payment.html");
-                  }
-
-
-                </script>
+             
+              
               </div>
 
 
@@ -156,13 +151,23 @@
                 // Get the button that opens the modal
                 var btn = document.getElementById("btn");
                 function myfunction() {
-                    if (document.getElementById("x").value == "")
+                    if (document.getElementById("a").value == "")
                       alert("please complete everything");
-                    else if (document.getElementById("y").value == "")
+                    else if (document.getElementById("b").value == "")
                       alert("please complete everything");
-                    else if (document.getElementById("z").value == "")
+                    else if (document.getElementById("c").value == "")
                       alert("please complete everything");
-                    else
+                    else if (document.getElementById("d").value == "")
+                      alert("please complete everything");
+                    else if (document.getElementById("e").value == "")
+                      alert("please complete everything");
+                    else if (document.getElementById("f").value == "")
+                      alert("please complete everything");
+                    else if (document.getElementById("g").value == "")
+                      alert("please complete everything");
+                    else if (document.getElementById("h").value == "")
+                      alert("please complete everything");
+                      else
                       modal.style.display = "block";
                   }
 
@@ -186,11 +191,11 @@
                 }
               </script>
 
-              <div class="view_bt" style="margin-top: 70px ;margin-left:-182px ;margin-bottom:10px; float:left ;width:50%; "><a href="#" onclick="myfunction1()">View applied Loans</b>
+              <div class="view_bt" style="margin-top: 70px ;margin-left:-182px ;margin-bottom:10px; float:left ;width:50%; "><a href="Applied Loans.html" >View applied Loans</b>
   
              
               </div>
-              <div class="view_bt"style=" width:60%; float:left ;"><a href="#" onclick="myfunction2()">Loan Payment</b></div>
+              <div class="view_bt"style=" width:60%; float:left ;"><a href="Loan_Payment.html" >Loan Payment</b></div>
             </div>
           </div>
 

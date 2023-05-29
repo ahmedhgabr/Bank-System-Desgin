@@ -77,14 +77,14 @@
             <td>1</td>
             <td>Transaction is incomplete due to system failure</td>
             <td>3/5/2023</td>
-            <td>&#x2714</td>
+            <td> <div class="send_bt"onclick ="myfunction()" ><a href="#"id="send_btn">Unresolved</a></div></td>
             
           </tr>
           <tr>
             <td>2</td>
             <td>Website is down</td>
             <td>9/3/2023</td>
-            <td>&#215</td>
+            <td> <div class="send_bt"onclick ="myfunction()" ><a href="#"id="send_btn">Unresolved</a></div></td>
             
           </tr>
           <tr>
@@ -92,11 +92,12 @@
             <td>User authentication failed</td>
             <td>12/2/2023</td>
             <td>
-              <div class="send_bt"onclick ="myfunction()" ><a href="#"id="send_btn">New Issue</a></div>
+              <div class="send_bt"onclick ="myfunction()" ><a href="#"id="send_btn">Unresolved</a></div>
                 <script>
                   function myfunction()
                {
-                document.getElementById("send_btn").innerText="Done";
+                document.getElementById("send_btn").innerText="Resolved";
+                
                 event.preventDefault();
                }
                   </script>

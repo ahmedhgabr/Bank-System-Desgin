@@ -235,7 +235,7 @@
                       <label class="formlabel22"  for="desired_credit_limit">Desired Credit Limit</label>
                       <input id="text6" class="mail_text_1" type="" name="desired_credit_limit" required><br><br> 
                     </form>
-                    <div style="margin-top: 60px; float: left;" id="report" class="send_bt" onclick="report()"><a href="#">Report</a></div>
+                    <div style="margin-top: 60px; float: left;" id="report" class="send_bt" onclick="report()"><a href="#">Apply</a></div>
               </div>
             </div>
           </div>
@@ -310,6 +310,7 @@
         else{
         document.getElementById("form").reset();
         modal.style.display="block";
+        document.getElementById("text").innerHTML="";
         }
       }
     </script>

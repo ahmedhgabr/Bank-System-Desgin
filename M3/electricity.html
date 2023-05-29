@@ -99,7 +99,7 @@
               <div>
                 <p class="banner_text" id="creditcardtext" style="margin-bottom: 0%;  padding-left: 20px; font-weight: bold;" > Reminder ON/OFF </p>
                 <label class="switch" style=" margin-right: 20px; margin-left: 50px ;" >
-                <input id="reminder" type="checkbox">
+                <input id="reminder" type="checkbox" onclick="reminder()">
                 <span class="slider"></span>
                 </label>
               </div>
@@ -137,6 +137,10 @@
     </div>
     <!--about section end -->
     <script>
+      function reminder(){
+        alert("Changes saved successfully!");
+      }
+
       function paycc() {
         var e = document.getElementById("cards");
         var c = document.getElementById("ccv");

@@ -96,13 +96,13 @@
           
                 <div style="visibility: hidden;" id ="lo">
                     <h1 class="services_taital">Loan amount:</h1>
-                                  <p class="services_text">12345</p>
+                                  <p class="services_text" id = "amount">12345</p>
                                   <h1 class="services_taital">Loan due:</h1>
                                   <p class="services_text">30/11/2023</p>
                                   <div>
                     <p class="banner_text" id="creditcardtext" style="margin-bottom: 0%;  padding-left: 20px; font-weight: bold;" > Reminder ON/OFF </p>
                     <label class="switch" style=" margin-right: 20px; margin-left: 50px ; margin-bottom: 10px; float: left;" >
-                    <input id="reminder" type="checkbox">
+                    <input id="reminder" type="checkbox" onclick="reminder()">
                     <span class="slider"></span>
                     </label>
                                   </div>
@@ -140,6 +140,10 @@
                 </div>
     <!--about section end -->
     <script>
+      function reminder(){
+        alert("Changes saved successfully!");
+      }
+
         function cload(){
             document.getElementById("lo").style.visibility="visible";
         }
@@ -164,7 +168,7 @@
           if(ccv == 592){
             alert("Paid successfully!");
             const removed = document.getElementById("removed");
-            removed.remove();
+          document.getElementById("amount").innerHTML = "0000";
           }
           else if(!ccv){
             alert("Please enter ccv!");
@@ -177,7 +181,7 @@
           if(ccv == 592){
             alert("Paid successfully!");
             const removed = document.getElementById("removed");
-            removed.remove();
+          document.getElementById("amount").innerHTML = "0000";
           }
           else if(!ccv){
             alert("Please enter ccv!");
@@ -197,7 +201,7 @@
         else{
           alert("Paid successfully!");
           const removed = document.getElementById("removed");
-          removed.remove();
+          document.getElementById("amount").innerHTML = "0000";
         }
       }
     </script>
